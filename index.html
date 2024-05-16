@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Algorithm</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <a href="index.html">Campus Navigation System using Dijkstra's Algorithm
+        </a>
+        <a href="./instructions.html"
+          ><img
+            src="https://cdn4.iconfinder.com/data/icons/web-mobile1/100/Untitled-8-512.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="options">
+        <div>
+          <button class="outline-btn" id="add-edge-enable" onclick="addEdges()">
+            Add edges
+          </button>
+          
+          <button
+            class="outline-btn reset-btn"
+            onclick="resetDrawingArea()"
+            disabled
+          >
+            Clear
+          </button>
+        </div>
+        <div>
+          <input
+            type="text"
+            inputmode="numeric"
+            id="source-node"
+            placeholder="Source Node"
+          />
+          <button
+            class="outline-btn run-btn"
+            onclick="findShortestPath(this)"
+            disabled
+          >
+            Run
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- header starts here -->
+    
+    <!-- header ends here -->
+    <div class="drawing-area">
+      <p class="click-instruction">Click to create node</p>
+    </div>
+    <div class="path"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="./gsap.js"></script>
+    <script src="./script.js"></script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyDS8mrErjRf2R5230eTaec2FeeGcppnH9A",
+        authDomain: "campus-navigation-system-240bf.firebaseapp.com",
+        projectId: "campus-navigation-system-240bf",
+        storageBucket: "campus-navigation-system-240bf.appspot.com",
+        messagingSenderId: "937002750516",
+        appId: "1:937002750516:web:98fe74d060fac4f4c8f061"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
+  
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Editor</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom styles -->
+    <style>
+        /* Add your custom styles here */
+    </style>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-gray-800 text-white py-4 items-center">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="title mx-auto">
+          <a href="index.html" class="text-xl font-bold">
+              Campus Navigation System using Dijkstra's Algorithm
+          </a>
+          <a href="./instructions.html">
+              <img src="https://cdn4.iconfinder.com/data/icons/web-mobile1/100/Untitled-8-512.png" alt="Instructions" class="ml-2 w-6 h-6">
+          </a>
+      </div>
+  </div>
+  
+        <!-- <div class="options flex items-center">
+            <button class="outline-btn bg-white text-gray-800 hover:text-gray-700 font-semibold py-2 px-4 rounded-lg mr-2" id="add-edge-enable" onclick="addEdges()">
+                Add edges
+            </button>
+            <button class="outline-btn bg-white text-gray-800 hover:text-gray-700 font-semibold py-2 px-4 rounded-lg mr-2" onclick="resetDrawingArea()" disabled>
+                Clear
+            </button>
+            <input type="text" inputmode="numeric" id="source-node" placeholder="Source Node" class="border border-gray-500 rounded-l-lg py-2 px-4 focus:outline-none focus:ring focus:border-blue-500 mr-2">
+            <button class="outline-btn bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-r-lg" onclick="findShortestPath(this)" disabled>
+                Run
+            </button>
+        </div> -->
+    </div>
+  </header>
+
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Instructions -->
+        <div class="container mx-auto px-4 py-8 flex flex-col items-center justify-center">
+          <!-- Instructions -->
+          <div class="mb-4">
+              <h1 class="text-2xl font-bold mb-2">Instructions</h1>
+              <p class="mb-2">• Click anywhere on the screen to create a node.</p>
+              <p class="mb-2">• After you finished adding nodes, start adding edges.</p>
+              <p class="mb-2">• Click button "Add edges" before adding edges.</p>
+              <p class="mb-2">• Edges can be added by clicking one node and then other node.</p>
+              <p class="mb-2">• All edges have default weight scaled to the size between them.</p>
+              <p class="mb-2">• You can click on the existing weight and change it according to the need.</p>
+              <p class="mb-2">• Enter the source vertex in input box and click "Run" to find minimum cost path.</p>
+          </div>
+          
+          <!-- Buttons -->
+          <div class="mb-4 flex">
+              <button onclick="window.location.href='https://drive.google.com/file/d/15lTldEGJUBBeArssQ8mkBX8hIXwmUkur/view'" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-4">Watch Video</button>
+              <button onclick="window.location.href='index.html'" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded">Continue</button>
+          </div>
+      </div>
+   
+     
+     
+    <!-- Include JavaScript for functionality -->
+    <script>
+        // Add your JavaScript code here
+    </script>
+</body>
+
+</html>
